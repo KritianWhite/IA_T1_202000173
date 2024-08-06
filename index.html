@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflex Agent Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        #results {
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+        ul li::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 10px;
+            height: 2px;
+            background: #4CAF50;
+        }
+        ul li::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 8px;
+            height: 100%;
+            width: 2px;
+            background: #4CAF50;
+        }
+        ul li:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reflex Agent Simulation</h1>
+    <div id="results"></div>
+    <script src="agent.js"></script>
+</body>
+</html>
